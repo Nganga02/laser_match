@@ -1,0 +1,734 @@
+[0.000000] (-) TimerEvent: {}
+[0.000974] (csm) JobQueued: {'identifier': 'csm', 'dependencies': OrderedDict()}
+[0.001039] (ros2_laser_scan_matcher) JobQueued: {'identifier': 'ros2_laser_scan_matcher', 'dependencies': OrderedDict([('csm', '/home/kamau/Documents/ros2_laser_odom/install/csm')])}
+[0.001083] (csm) JobStarted: {'identifier': 'csm'}
+[0.021310] (csm) JobProgress: {'identifier': 'csm', 'progress': 'cmake'}
+[0.021641] (csm) Command: {'cmd': ['/usr/bin/cmake', '/home/kamau/Documents/ros2_laser_odom/csm', '-DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/csm'], 'cwd': '/home/kamau/Documents/ros2_laser_odom/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'kamau'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kamau/Documents/hiwonder/install/xarm_planner/lib:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo/lib:/home/kamau/Documents/hiwonder/install/xarm_gazebo/lib:/home/kamau/Documents/hiwonder/install/xarm_controller/lib:/home/kamau/Documents/hiwonder/install/xarm_api/lib:/home/kamau/Documents/hiwonder/install/xarm_sdk/lib:/home/kamau/Documents/hiwonder/install/xarm_msgs/lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kamau'), ('OLDPWD', '/home/kamau'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1538'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3700'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kamau/Documents/hiwonder/install:/home/kamau/SLAM_WS/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kamau'), ('JOURNAL_STREAM', '8:13517'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kamau/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Kamau-s-HP:@/tmp/.ICE-unix/1562,unix/Kamau-s-HP:/tmp/.ICE-unix/1562'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'c9f38f768b444739ba09706c6b3d192f'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'sw_KE'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LC_TELEPHONE', 'sw_KE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/kamau/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/kamau'), ('AMENT_PREFIX_PATH', '/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:6e5e1693-3a0d-43a3-9f14-d687d5086434'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sw_KE'), ('PWD', '/home/kamau/Documents/ros2_laser_odom/build/csm'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/kamau/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kamau/SLAM_WS/install/my_py_pkg/lib/python3.10/site-packages:/home/kamau/SLAM_WS/install/controller/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/xarm_msgs/local/lib/python3.10/dist-packages:/home/kamau/Documents/hiwonder/install/uf_ros_lib/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/hiwonder_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[0.099460] (-) TimerEvent: {}
+[0.118499] (csm) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.189365] (csm) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.197108] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199497] (-) TimerEvent: {}
+[0.279780] (csm) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.288949] (csm) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.289301] (csm) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.289829] (csm) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.292998] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299597] (-) TimerEvent: {}
+[0.398825] (csm) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.399674] (-) TimerEvent: {}
+[0.407569] (csm) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.407936] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.408496] (csm) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.413759] (csm) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.499784] (-) TimerEvent: {}
+[0.600074] (-) TimerEvent: {}
+[0.624321] (csm) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.700522] (-) TimerEvent: {}
+[0.800829] (-) TimerEvent: {}
+[0.855511] (csm) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.900931] (-) TimerEvent: {}
+[0.969756] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.987768] (csm) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.001037] (-) TimerEvent: {}
+[1.013203] (csm) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.041644] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.067776] (csm) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.101140] (-) TimerEvent: {}
+[1.171742] (csm) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.179866] (csm) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[1.201246] (-) TimerEvent: {}
+[1.237393] (csm) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[1.261575] (csm) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.301363] (-) TimerEvent: {}
+[1.379633] (csm) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.380016] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.401520] (-) TimerEvent: {}
+[1.483129] (csm) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.484459] (csm) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.501623] (-) TimerEvent: {}
+[1.601924] (-) TimerEvent: {}
+[1.683623] (csm) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.695392] (csm) StdoutLine: {'line': b'-- Generating done\n'}
+[1.698174] (csm) StdoutLine: {'line': b'-- Build files have been written to: /home/kamau/Documents/ros2_laser_odom/build/csm\n'}
+[1.702050] (-) TimerEvent: {}
+[1.713204] (csm) CommandEnded: {'returncode': 0}
+[1.716580] (csm) JobProgress: {'identifier': 'csm', 'progress': 'build'}
+[1.716644] (csm) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kamau/Documents/ros2_laser_odom/build/csm', '--', '-j4', '-l4'], 'cwd': '/home/kamau/Documents/ros2_laser_odom/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'kamau'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kamau/Documents/hiwonder/install/xarm_planner/lib:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo/lib:/home/kamau/Documents/hiwonder/install/xarm_gazebo/lib:/home/kamau/Documents/hiwonder/install/xarm_controller/lib:/home/kamau/Documents/hiwonder/install/xarm_api/lib:/home/kamau/Documents/hiwonder/install/xarm_sdk/lib:/home/kamau/Documents/hiwonder/install/xarm_msgs/lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kamau'), ('OLDPWD', '/home/kamau'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1538'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3700'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kamau/Documents/hiwonder/install:/home/kamau/SLAM_WS/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kamau'), ('JOURNAL_STREAM', '8:13517'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kamau/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Kamau-s-HP:@/tmp/.ICE-unix/1562,unix/Kamau-s-HP:/tmp/.ICE-unix/1562'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'c9f38f768b444739ba09706c6b3d192f'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'sw_KE'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LC_TELEPHONE', 'sw_KE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/kamau/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/kamau'), ('AMENT_PREFIX_PATH', '/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:6e5e1693-3a0d-43a3-9f14-d687d5086434'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sw_KE'), ('PWD', '/home/kamau/Documents/ros2_laser_odom/build/csm'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/kamau/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kamau/SLAM_WS/install/my_py_pkg/lib/python3.10/site-packages:/home/kamau/SLAM_WS/install/controller/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/xarm_msgs/local/lib/python3.10/dist-packages:/home/kamau/Documents/hiwonder/install/uf_ros_lib/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/hiwonder_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[1.803531] (-) TimerEvent: {}
+[1.814093] (csm) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o\x1b[0m\n'}
+[1.817502] (csm) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o\x1b[0m\n'}
+[1.826631] (csm) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o\x1b[0m\n'}
+[1.844772] (csm) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o\x1b[0m\n'}
+[1.903626] (-) TimerEvent: {}
+[2.011502] (-) TimerEvent: {}
+[2.111849] (-) TimerEvent: {}
+[2.214421] (-) TimerEvent: {}
+[2.314784] (-) TimerEvent: {}
+[2.415138] (-) TimerEvent: {}
+[2.519507] (-) TimerEvent: {}
+[2.622515] (-) TimerEvent: {}
+[2.723073] (-) TimerEvent: {}
+[2.823574] (-) TimerEvent: {}
+[2.924072] (-) TimerEvent: {}
+[3.024509] (-) TimerEvent: {}
+[3.124845] (-) TimerEvent: {}
+[3.228509] (-) TimerEvent: {}
+[3.328839] (-) TimerEvent: {}
+[3.429317] (-) TimerEvent: {}
+[3.531508] (-) TimerEvent: {}
+[3.631963] (-) TimerEvent: {}
+[3.732452] (-) TimerEvent: {}
+[3.832909] (-) TimerEvent: {}
+[3.936504] (-) TimerEvent: {}
+[4.039521] (-) TimerEvent: {}
+[4.140011] (-) TimerEvent: {}
+[4.240510] (-) TimerEvent: {}
+[4.340997] (-) TimerEvent: {}
+[4.441496] (-) TimerEvent: {}
+[4.541986] (-) TimerEvent: {}
+[4.645509] (-) TimerEvent: {}
+[4.759511] (-) TimerEvent: {}
+[4.862628] (-) TimerEvent: {}
+[4.962948] (-) TimerEvent: {}
+[5.064644] (-) TimerEvent: {}
+[5.173508] (-) TimerEvent: {}
+[5.275518] (-) TimerEvent: {}
+[5.378509] (-) TimerEvent: {}
+[5.478831] (-) TimerEvent: {}
+[5.583530] (-) TimerEvent: {}
+[5.683979] (-) TimerEvent: {}
+[5.784648] (-) TimerEvent: {}
+[5.891880] (-) TimerEvent: {}
+[5.998510] (-) TimerEvent: {}
+[6.101508] (-) TimerEvent: {}
+[6.201970] (-) TimerEvent: {}
+[6.299954] (csm) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o\x1b[0m\n'}
+[6.302072] (-) TimerEvent: {}
+[6.332229] (csm) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o\x1b[0m\n'}
+[6.404514] (-) TimerEvent: {}
+[6.498567] (csm) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o\x1b[0m\n'}
+[6.507504] (-) TimerEvent: {}
+[6.607971] (-) TimerEvent: {}
+[6.618184] (csm) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o\x1b[0m\n'}
+[6.709502] (-) TimerEvent: {}
+[6.809819] (-) TimerEvent: {}
+[6.910142] (-) TimerEvent: {}
+[7.010638] (-) TimerEvent: {}
+[7.113511] (-) TimerEvent: {}
+[7.213964] (-) TimerEvent: {}
+[7.314439] (-) TimerEvent: {}
+[7.414963] (-) TimerEvent: {}
+[7.515475] (-) TimerEvent: {}
+[7.615985] (-) TimerEvent: {}
+[7.717841] (-) TimerEvent: {}
+[7.820744] (-) TimerEvent: {}
+[7.938507] (-) TimerEvent: {}
+[8.039328] (-) TimerEvent: {}
+[8.139880] (-) TimerEvent: {}
+[8.240370] (-) TimerEvent: {}
+[8.340844] (-) TimerEvent: {}
+[8.441301] (-) TimerEvent: {}
+[8.541811] (-) TimerEvent: {}
+[8.642308] (-) TimerEvent: {}
+[8.743748] (-) TimerEvent: {}
+[8.844210] (-) TimerEvent: {}
+[8.945729] (-) TimerEvent: {}
+[9.046208] (-) TimerEvent: {}
+[9.148191] (-) TimerEvent: {}
+[9.254020] (-) TimerEvent: {}
+[9.354785] (-) TimerEvent: {}
+[9.456760] (-) TimerEvent: {}
+[9.560253] (-) TimerEvent: {}
+[9.660748] (-) TimerEvent: {}
+[9.761725] (-) TimerEvent: {}
+[9.863218] (-) TimerEvent: {}
+[9.965154] (-) TimerEvent: {}
+[10.065637] (-) TimerEvent: {}
+[10.168746] (-) TimerEvent: {}
+[10.271528] (-) TimerEvent: {}
+[10.375474] (-) TimerEvent: {}
+[10.419484] (csm) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o\x1b[0m\n'}
+[10.473529] (-) TimerEvent: {}
+[10.501886] (csm) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o\x1b[0m\n'}
+[10.573627] (-) TimerEvent: {}
+[10.654653] (csm) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o\x1b[0m\n'}
+[10.674061] (-) TimerEvent: {}
+[10.771685] (csm) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o\x1b[0m\n'}
+[10.774170] (-) TimerEvent: {}
+[10.874656] (-) TimerEvent: {}
+[10.975510] (-) TimerEvent: {}
+[11.076074] (-) TimerEvent: {}
+[11.176514] (-) TimerEvent: {}
+[11.276853] (-) TimerEvent: {}
+[11.377613] (-) TimerEvent: {}
+[11.478070] (-) TimerEvent: {}
+[11.581671] (-) TimerEvent: {}
+[11.682203] (-) TimerEvent: {}
+[11.782730] (-) TimerEvent: {}
+[11.883217] (-) TimerEvent: {}
+[11.983515] (-) TimerEvent: {}
+[12.083992] (-) TimerEvent: {}
+[12.184480] (-) TimerEvent: {}
+[12.285684] (-) TimerEvent: {}
+[12.386211] (-) TimerEvent: {}
+[12.486690] (-) TimerEvent: {}
+[12.588746] (-) TimerEvent: {}
+[12.689099] (-) TimerEvent: {}
+[12.789600] (-) TimerEvent: {}
+[12.890524] (-) TimerEvent: {}
+[12.993512] (-) TimerEvent: {}
+[13.093866] (-) TimerEvent: {}
+[13.195745] (-) TimerEvent: {}
+[13.296522] (-) TimerEvent: {}
+[13.397038] (-) TimerEvent: {}
+[13.497525] (-) TimerEvent: {}
+[13.598989] (-) TimerEvent: {}
+[13.703560] (-) TimerEvent: {}
+[13.715203] (csm) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o\x1b[0m\n'}
+[13.803668] (-) TimerEvent: {}
+[13.904166] (-) TimerEvent: {}
+[14.004670] (-) TimerEvent: {}
+[14.111566] (-) TimerEvent: {}
+[14.211886] (-) TimerEvent: {}
+[14.312733] (-) TimerEvent: {}
+[14.416482] (-) TimerEvent: {}
+[14.516816] (-) TimerEvent: {}
+[14.620098] (-) TimerEvent: {}
+[14.693578] (csm) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o\x1b[0m\n'}
+[14.730945] (-) TimerEvent: {}
+[14.833536] (-) TimerEvent: {}
+[14.879112] (csm) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o\x1b[0m\n'}
+[14.933635] (-) TimerEvent: {}
+[15.034118] (-) TimerEvent: {}
+[15.135066] (-) TimerEvent: {}
+[15.235984] (-) TimerEvent: {}
+[15.336466] (-) TimerEvent: {}
+[15.436964] (-) TimerEvent: {}
+[15.537491] (-) TimerEvent: {}
+[15.638013] (-) TimerEvent: {}
+[15.739932] (-) TimerEvent: {}
+[15.840358] (-) TimerEvent: {}
+[15.940854] (-) TimerEvent: {}
+[16.044213] (-) TimerEvent: {}
+[16.148147] (-) TimerEvent: {}
+[16.255915] (-) TimerEvent: {}
+[16.359517] (-) TimerEvent: {}
+[16.463156] (-) TimerEvent: {}
+[16.566518] (-) TimerEvent: {}
+[16.666892] (-) TimerEvent: {}
+[16.767248] (-) TimerEvent: {}
+[16.867616] (-) TimerEvent: {}
+[16.967970] (-) TimerEvent: {}
+[17.068313] (-) TimerEvent: {}
+[17.169163] (-) TimerEvent: {}
+[17.269530] (-) TimerEvent: {}
+[17.369878] (-) TimerEvent: {}
+[17.472752] (-) TimerEvent: {}
+[17.573250] (-) TimerEvent: {}
+[17.673781] (-) TimerEvent: {}
+[17.774278] (-) TimerEvent: {}
+[17.874789] (-) TimerEvent: {}
+[17.883601] (csm) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o\x1b[0m\n'}
+[17.975020] (-) TimerEvent: {}
+[18.077266] (-) TimerEvent: {}
+[18.177776] (-) TimerEvent: {}
+[18.278295] (-) TimerEvent: {}
+[18.384247] (-) TimerEvent: {}
+[18.488408] (-) TimerEvent: {}
+[18.588932] (-) TimerEvent: {}
+[18.690151] (-) TimerEvent: {}
+[18.702750] (csm) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o\x1b[0m\n'}
+[18.792517] (-) TimerEvent: {}
+[18.893036] (-) TimerEvent: {}
+[18.994854] (-) TimerEvent: {}
+[19.096519] (-) TimerEvent: {}
+[19.197005] (-) TimerEvent: {}
+[19.297490] (-) TimerEvent: {}
+[19.397979] (-) TimerEvent: {}
+[19.508517] (-) TimerEvent: {}
+[19.608861] (-) TimerEvent: {}
+[19.709219] (-) TimerEvent: {}
+[19.809599] (-) TimerEvent: {}
+[19.910098] (-) TimerEvent: {}
+[20.012518] (-) TimerEvent: {}
+[20.112850] (-) TimerEvent: {}
+[20.213202] (-) TimerEvent: {}
+[20.313578] (-) TimerEvent: {}
+[20.414553] (-) TimerEvent: {}
+[20.514903] (-) TimerEvent: {}
+[20.617763] (-) TimerEvent: {}
+[20.718252] (-) TimerEvent: {}
+[20.819909] (-) TimerEvent: {}
+[20.920420] (-) TimerEvent: {}
+[21.020940] (-) TimerEvent: {}
+[21.121589] (-) TimerEvent: {}
+[21.129708] (csm) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o\x1b[0m\n'}
+[21.221701] (-) TimerEvent: {}
+[21.322202] (-) TimerEvent: {}
+[21.423749] (-) TimerEvent: {}
+[21.524484] (-) TimerEvent: {}
+[21.624946] (-) TimerEvent: {}
+[21.728514] (-) TimerEvent: {}
+[21.757530] (csm) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o\x1b[0m\n'}
+[21.820787] (csm) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o\x1b[0m\n'}
+[21.828620] (-) TimerEvent: {}
+[21.929094] (-) TimerEvent: {}
+[22.029565] (-) TimerEvent: {}
+[22.132777] (-) TimerEvent: {}
+[22.233268] (-) TimerEvent: {}
+[22.333731] (-) TimerEvent: {}
+[22.434239] (-) TimerEvent: {}
+[22.534740] (-) TimerEvent: {}
+[22.635249] (-) TimerEvent: {}
+[22.740512] (-) TimerEvent: {}
+[22.841518] (-) TimerEvent: {}
+[22.944515] (-) TimerEvent: {}
+[23.044905] (-) TimerEvent: {}
+[23.147691] (-) TimerEvent: {}
+[23.248169] (-) TimerEvent: {}
+[23.348680] (-) TimerEvent: {}
+[23.449175] (-) TimerEvent: {}
+[23.549723] (-) TimerEvent: {}
+[23.651618] (-) TimerEvent: {}
+[23.754203] (-) TimerEvent: {}
+[23.855690] (-) TimerEvent: {}
+[23.956185] (-) TimerEvent: {}
+[24.056704] (-) TimerEvent: {}
+[24.159771] (-) TimerEvent: {}
+[24.260121] (-) TimerEvent: {}
+[24.360629] (-) TimerEvent: {}
+[24.412170] (csm) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o\x1b[0m\n'}
+[24.460748] (-) TimerEvent: {}
+[24.561237] (-) TimerEvent: {}
+[24.661732] (-) TimerEvent: {}
+[24.763752] (-) TimerEvent: {}
+[24.864262] (-) TimerEvent: {}
+[24.964833] (-) TimerEvent: {}
+[24.984895] (csm) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o\x1b[0m\n'}
+[25.032338] (csm) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o\x1b[0m\n'}
+[25.066395] (-) TimerEvent: {}
+[25.166778] (-) TimerEvent: {}
+[25.270644] (-) TimerEvent: {}
+[25.370997] (-) TimerEvent: {}
+[25.471583] (-) TimerEvent: {}
+[25.571932] (-) TimerEvent: {}
+[25.672839] (-) TimerEvent: {}
+[25.773200] (-) TimerEvent: {}
+[25.874061] (-) TimerEvent: {}
+[25.975009] (-) TimerEvent: {}
+[26.075346] (-) TimerEvent: {}
+[26.178520] (-) TimerEvent: {}
+[26.279046] (-) TimerEvent: {}
+[26.379439] (-) TimerEvent: {}
+[26.479800] (-) TimerEvent: {}
+[26.580145] (-) TimerEvent: {}
+[26.680520] (-) TimerEvent: {}
+[26.780853] (-) TimerEvent: {}
+[26.881176] (-) TimerEvent: {}
+[26.981591] (-) TimerEvent: {}
+[27.081919] (-) TimerEvent: {}
+[27.182248] (-) TimerEvent: {}
+[27.282682] (-) TimerEvent: {}
+[27.383008] (-) TimerEvent: {}
+[27.483330] (-) TimerEvent: {}
+[27.583656] (-) TimerEvent: {}
+[27.683988] (-) TimerEvent: {}
+[27.784300] (-) TimerEvent: {}
+[27.884627] (-) TimerEvent: {}
+[27.984957] (-) TimerEvent: {}
+[28.085281] (-) TimerEvent: {}
+[28.185616] (-) TimerEvent: {}
+[28.285937] (-) TimerEvent: {}
+[28.386238] (-) TimerEvent: {}
+[28.486520] (-) TimerEvent: {}
+[28.586853] (-) TimerEvent: {}
+[28.687177] (-) TimerEvent: {}
+[28.787515] (-) TimerEvent: {}
+[28.887822] (-) TimerEvent: {}
+[28.988131] (-) TimerEvent: {}
+[29.088464] (-) TimerEvent: {}
+[29.188781] (-) TimerEvent: {}
+[29.289091] (-) TimerEvent: {}
+[29.389398] (-) TimerEvent: {}
+[29.489761] (-) TimerEvent: {}
+[29.590104] (-) TimerEvent: {}
+[29.690395] (-) TimerEvent: {}
+[29.790752] (-) TimerEvent: {}
+[29.891085] (-) TimerEvent: {}
+[29.991374] (-) TimerEvent: {}
+[30.091843] (-) TimerEvent: {}
+[30.192153] (-) TimerEvent: {}
+[30.292498] (-) TimerEvent: {}
+[30.392817] (-) TimerEvent: {}
+[30.493142] (-) TimerEvent: {}
+[30.593482] (-) TimerEvent: {}
+[30.693809] (-) TimerEvent: {}
+[30.794121] (-) TimerEvent: {}
+[30.894508] (-) TimerEvent: {}
+[30.994825] (-) TimerEvent: {}
+[31.095128] (-) TimerEvent: {}
+[31.195483] (-) TimerEvent: {}
+[31.295798] (-) TimerEvent: {}
+[31.396234] (-) TimerEvent: {}
+[31.496508] (-) TimerEvent: {}
+[31.596819] (-) TimerEvent: {}
+[31.697128] (-) TimerEvent: {}
+[31.797465] (-) TimerEvent: {}
+[31.897822] (-) TimerEvent: {}
+[31.998165] (-) TimerEvent: {}
+[32.098549] (-) TimerEvent: {}
+[32.198887] (-) TimerEvent: {}
+[32.299177] (-) TimerEvent: {}
+[32.399516] (-) TimerEvent: {}
+[32.499838] (-) TimerEvent: {}
+[32.600169] (-) TimerEvent: {}
+[32.700548] (-) TimerEvent: {}
+[32.800870] (-) TimerEvent: {}
+[32.901181] (-) TimerEvent: {}
+[33.001517] (-) TimerEvent: {}
+[33.101839] (-) TimerEvent: {}
+[33.202176] (-) TimerEvent: {}
+[33.302507] (-) TimerEvent: {}
+[33.402842] (-) TimerEvent: {}
+[33.503198] (-) TimerEvent: {}
+[33.603522] (-) TimerEvent: {}
+[33.703868] (-) TimerEvent: {}
+[33.804209] (-) TimerEvent: {}
+[33.904518] (-) TimerEvent: {}
+[34.004852] (-) TimerEvent: {}
+[34.105188] (-) TimerEvent: {}
+[34.205515] (-) TimerEvent: {}
+[34.305859] (-) TimerEvent: {}
+[34.406297] (-) TimerEvent: {}
+[34.506722] (-) TimerEvent: {}
+[34.607133] (-) TimerEvent: {}
+[34.707529] (-) TimerEvent: {}
+[34.807932] (-) TimerEvent: {}
+[34.908324] (-) TimerEvent: {}
+[35.008753] (-) TimerEvent: {}
+[35.109157] (-) TimerEvent: {}
+[35.209563] (-) TimerEvent: {}
+[35.309992] (-) TimerEvent: {}
+[35.410408] (-) TimerEvent: {}
+[35.510827] (-) TimerEvent: {}
+[35.611233] (-) TimerEvent: {}
+[35.711656] (-) TimerEvent: {}
+[35.812069] (-) TimerEvent: {}
+[35.912462] (-) TimerEvent: {}
+[36.012773] (-) TimerEvent: {}
+[36.113118] (-) TimerEvent: {}
+[36.213477] (-) TimerEvent: {}
+[36.313818] (-) TimerEvent: {}
+[36.414165] (-) TimerEvent: {}
+[36.514519] (-) TimerEvent: {}
+[36.614848] (-) TimerEvent: {}
+[36.715157] (-) TimerEvent: {}
+[36.815639] (-) TimerEvent: {}
+[36.916419] (-) TimerEvent: {}
+[37.017100] (-) TimerEvent: {}
+[37.117417] (-) TimerEvent: {}
+[37.217854] (-) TimerEvent: {}
+[37.318157] (-) TimerEvent: {}
+[37.418472] (-) TimerEvent: {}
+[37.518882] (-) TimerEvent: {}
+[37.619296] (-) TimerEvent: {}
+[37.719731] (-) TimerEvent: {}
+[37.820176] (-) TimerEvent: {}
+[37.826570] (csm) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libcsm.so\x1b[0m\n'}
+[37.920282] (-) TimerEvent: {}
+[38.020598] (-) TimerEvent: {}
+[38.120958] (-) TimerEvent: {}
+[38.221278] (-) TimerEvent: {}
+[38.321613] (-) TimerEvent: {}
+[38.421943] (-) TimerEvent: {}
+[38.503859] (csm) StdoutLine: {'line': b'[100%] Built target csm\n'}
+[38.518715] (csm) CommandEnded: {'returncode': 0}
+[38.522032] (-) TimerEvent: {}
+[38.622320] (-) TimerEvent: {}
+[38.649577] (csm) JobProgress: {'identifier': 'csm', 'progress': 'install'}
+[38.664144] (csm) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kamau/Documents/ros2_laser_odom/build/csm'], 'cwd': '/home/kamau/Documents/ros2_laser_odom/build/csm', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'kamau'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kamau/Documents/hiwonder/install/xarm_planner/lib:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo/lib:/home/kamau/Documents/hiwonder/install/xarm_gazebo/lib:/home/kamau/Documents/hiwonder/install/xarm_controller/lib:/home/kamau/Documents/hiwonder/install/xarm_api/lib:/home/kamau/Documents/hiwonder/install/xarm_sdk/lib:/home/kamau/Documents/hiwonder/install/xarm_msgs/lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kamau'), ('OLDPWD', '/home/kamau'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1538'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3700'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kamau/Documents/hiwonder/install:/home/kamau/SLAM_WS/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kamau'), ('JOURNAL_STREAM', '8:13517'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kamau/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Kamau-s-HP:@/tmp/.ICE-unix/1562,unix/Kamau-s-HP:/tmp/.ICE-unix/1562'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'c9f38f768b444739ba09706c6b3d192f'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'sw_KE'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LC_TELEPHONE', 'sw_KE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/kamau/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/kamau'), ('AMENT_PREFIX_PATH', '/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:6e5e1693-3a0d-43a3-9f14-d687d5086434'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sw_KE'), ('PWD', '/home/kamau/Documents/ros2_laser_odom/build/csm'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/kamau/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kamau/SLAM_WS/install/my_py_pkg/lib/python3.10/site-packages:/home/kamau/SLAM_WS/install/controller/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/xarm_msgs/local/lib/python3.10/dist-packages:/home/kamau/Documents/hiwonder/install/uf_ros_lib/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/hiwonder_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[38.674553] (csm) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.674855] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/lib/libcsm.so\n'}
+[38.682100] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include\n'}
+[38.682434] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm\n'}
+[38.682692] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/restrict.h\n'}
+[38.682959] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/csm.h\n'}
+[38.683180] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/algos.h\n'}
+[38.683385] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/laser_data.h\n'}
+[38.683590] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/laser_data_inline.h\n'}
+[38.683801] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/gsl_eigen\n'}
+[38.683990] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/gsl_eigen/gsl_eigen.h\n'}
+[38.684203] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/resource\n'}
+[38.684362] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/resource/csm\n'}
+[38.684566] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/../gsl_eigen\n'}
+[38.684724] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/../gsl_eigen/gsl_eigen.h\n'}
+[38.684928] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/library_path.sh\n'}
+[38.685097] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/library_path.dsv\n'}
+[38.685289] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/ament_index/resource_index/package_run_dependencies/csm\n'}
+[38.685488] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/ament_index/resource_index/parent_prefix_path/csm\n'}
+[38.685740] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/ament_prefix_path.sh\n'}
+[38.685951] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/ament_prefix_path.dsv\n'}
+[38.686144] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/path.sh\n'}
+[38.686343] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/path.dsv\n'}
+[38.686547] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.bash\n'}
+[38.686765] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.sh\n'}
+[38.686964] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.zsh\n'}
+[38.687139] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.dsv\n'}
+[38.687309] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.dsv\n'}
+[38.687564] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/ament_index/resource_index/packages/csm\n'}
+[38.687788] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[38.687967] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[38.688152] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[38.688334] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/csmConfig.cmake\n'}
+[38.688496] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/csmConfig-version.cmake\n'}
+[38.688679] (csm) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.xml\n'}
+[38.690888] (csm) CommandEnded: {'returncode': 0}
+[38.722439] (-) TimerEvent: {}
+[38.822826] (-) TimerEvent: {}
+[38.852044] (csm) JobEnded: {'identifier': 'csm', 'rc': 0}
+[38.855061] (ros2_laser_scan_matcher) JobStarted: {'identifier': 'ros2_laser_scan_matcher'}
+[38.868016] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'cmake'}
+[38.869826] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '/home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher', '-DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher'], 'cwd': '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'kamau'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm/lib:/home/kamau/Documents/hiwonder/install/xarm_planner/lib:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo/lib:/home/kamau/Documents/hiwonder/install/xarm_gazebo/lib:/home/kamau/Documents/hiwonder/install/xarm_controller/lib:/home/kamau/Documents/hiwonder/install/xarm_api/lib:/home/kamau/Documents/hiwonder/install/xarm_sdk/lib:/home/kamau/Documents/hiwonder/install/xarm_msgs/lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kamau'), ('OLDPWD', '/home/kamau'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1538'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3700'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kamau/Documents/hiwonder/install:/home/kamau/SLAM_WS/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kamau'), ('JOURNAL_STREAM', '8:13517'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kamau/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Kamau-s-HP:@/tmp/.ICE-unix/1562,unix/Kamau-s-HP:/tmp/.ICE-unix/1562'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'c9f38f768b444739ba09706c6b3d192f'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'sw_KE'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LC_TELEPHONE', 'sw_KE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/kamau/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/kamau'), ('AMENT_PREFIX_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:6e5e1693-3a0d-43a3-9f14-d687d5086434'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sw_KE'), ('PWD', '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/kamau/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kamau/SLAM_WS/install/my_py_pkg/lib/python3.10/site-packages:/home/kamau/SLAM_WS/install/controller/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/xarm_msgs/local/lib/python3.10/dist-packages:/home/kamau/Documents/hiwonder/install/uf_ros_lib/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/hiwonder_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[38.892556] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[38.922960] (-) TimerEvent: {}
+[39.023283] (-) TimerEvent: {}
+[39.075454] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[39.110478] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[39.113846] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[39.121507] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[39.123373] (-) TimerEvent: {}
+[39.135352] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[39.156043] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[39.223498] (-) TimerEvent: {}
+[39.228395] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[39.265300] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[39.267785] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[39.291694] (ros2_laser_scan_matcher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[39.323603] (-) TimerEvent: {}
+[39.340219] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[39.364128] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.7 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[39.423725] (-) TimerEvent: {}
+[39.475176] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.7 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[39.478727] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[39.480385] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[39.488262] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found csm: 0.0.0 (/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake)\n'}
+[39.523823] (-) TimerEvent: {}
+[39.532017] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread \n'}
+[39.623938] (-) TimerEvent: {}
+[39.651069] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Configuring done\n'}
+[39.676698] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Generating done\n'}
+[39.678980] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Build files have been written to: /home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher\n'}
+[39.692319] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[39.693501] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'build'}
+[39.693550] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher', '--', '-j4', '-l4'], 'cwd': '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'kamau'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm/lib:/home/kamau/Documents/hiwonder/install/xarm_planner/lib:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo/lib:/home/kamau/Documents/hiwonder/install/xarm_gazebo/lib:/home/kamau/Documents/hiwonder/install/xarm_controller/lib:/home/kamau/Documents/hiwonder/install/xarm_api/lib:/home/kamau/Documents/hiwonder/install/xarm_sdk/lib:/home/kamau/Documents/hiwonder/install/xarm_msgs/lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kamau'), ('OLDPWD', '/home/kamau'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1538'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3700'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kamau/Documents/hiwonder/install:/home/kamau/SLAM_WS/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kamau'), ('JOURNAL_STREAM', '8:13517'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kamau/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Kamau-s-HP:@/tmp/.ICE-unix/1562,unix/Kamau-s-HP:/tmp/.ICE-unix/1562'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'c9f38f768b444739ba09706c6b3d192f'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'sw_KE'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LC_TELEPHONE', 'sw_KE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/kamau/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/kamau'), ('AMENT_PREFIX_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:6e5e1693-3a0d-43a3-9f14-d687d5086434'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sw_KE'), ('PWD', '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/kamau/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kamau/SLAM_WS/install/my_py_pkg/lib/python3.10/site-packages:/home/kamau/SLAM_WS/install/controller/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/xarm_msgs/local/lib/python3.10/dist-packages:/home/kamau/Documents/hiwonder/install/uf_ros_lib/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/hiwonder_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[39.724054] (-) TimerEvent: {}
+[39.770839] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/laser_scan_matcher.dir/src/laser_scan_matcher.cpp.o\x1b[0m\n'}
+[39.824167] (-) TimerEvent: {}
+[39.924514] (-) TimerEvent: {}
+[40.024845] (-) TimerEvent: {}
+[40.125207] (-) TimerEvent: {}
+[40.225495] (-) TimerEvent: {}
+[40.325798] (-) TimerEvent: {}
+[40.358365] (ros2_laser_scan_matcher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher/include/ros2_laser_scan_matcher/laser_scan_matcher.h:47\x1b[m\x1b[K,\n'}
+[40.358628] (ros2_laser_scan_matcher) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher/src/laser_scan_matcher.cpp:38\x1b[m\x1b[K:\n'}
+[40.358750] (ros2_laser_scan_matcher) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[40.358859] (ros2_laser_scan_matcher) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[40.358958] (ros2_laser_scan_matcher) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[40.425916] (-) TimerEvent: {}
+[40.526258] (-) TimerEvent: {}
+[40.626604] (-) TimerEvent: {}
+[40.726946] (-) TimerEvent: {}
+[40.827278] (-) TimerEvent: {}
+[40.927631] (-) TimerEvent: {}
+[41.027939] (-) TimerEvent: {}
+[41.128274] (-) TimerEvent: {}
+[41.228589] (-) TimerEvent: {}
+[41.328896] (-) TimerEvent: {}
+[41.429212] (-) TimerEvent: {}
+[41.529525] (-) TimerEvent: {}
+[41.629872] (-) TimerEvent: {}
+[41.730179] (-) TimerEvent: {}
+[41.830505] (-) TimerEvent: {}
+[41.930830] (-) TimerEvent: {}
+[42.031158] (-) TimerEvent: {}
+[42.131485] (-) TimerEvent: {}
+[42.231810] (-) TimerEvent: {}
+[42.332144] (-) TimerEvent: {}
+[42.432477] (-) TimerEvent: {}
+[42.532794] (-) TimerEvent: {}
+[42.633114] (-) TimerEvent: {}
+[42.733465] (-) TimerEvent: {}
+[42.833792] (-) TimerEvent: {}
+[42.934111] (-) TimerEvent: {}
+[43.034437] (-) TimerEvent: {}
+[43.134773] (-) TimerEvent: {}
+[43.235101] (-) TimerEvent: {}
+[43.335415] (-) TimerEvent: {}
+[43.435776] (-) TimerEvent: {}
+[43.536059] (-) TimerEvent: {}
+[43.636394] (-) TimerEvent: {}
+[43.736743] (-) TimerEvent: {}
+[43.837129] (-) TimerEvent: {}
+[43.937461] (-) TimerEvent: {}
+[44.037787] (-) TimerEvent: {}
+[44.138104] (-) TimerEvent: {}
+[44.238422] (-) TimerEvent: {}
+[44.338736] (-) TimerEvent: {}
+[44.439056] (-) TimerEvent: {}
+[44.539389] (-) TimerEvent: {}
+[44.639740] (-) TimerEvent: {}
+[44.740062] (-) TimerEvent: {}
+[44.840390] (-) TimerEvent: {}
+[44.940730] (-) TimerEvent: {}
+[45.041055] (-) TimerEvent: {}
+[45.141362] (-) TimerEvent: {}
+[45.241682] (-) TimerEvent: {}
+[45.341993] (-) TimerEvent: {}
+[45.442313] (-) TimerEvent: {}
+[45.542663] (-) TimerEvent: {}
+[45.642986] (-) TimerEvent: {}
+[45.743308] (-) TimerEvent: {}
+[45.843634] (-) TimerEvent: {}
+[45.943972] (-) TimerEvent: {}
+[46.044290] (-) TimerEvent: {}
+[46.144624] (-) TimerEvent: {}
+[46.244944] (-) TimerEvent: {}
+[46.345274] (-) TimerEvent: {}
+[46.445602] (-) TimerEvent: {}
+[46.545920] (-) TimerEvent: {}
+[46.646232] (-) TimerEvent: {}
+[46.746509] (-) TimerEvent: {}
+[46.846830] (-) TimerEvent: {}
+[46.947151] (-) TimerEvent: {}
+[47.047493] (-) TimerEvent: {}
+[47.147807] (-) TimerEvent: {}
+[47.248139] (-) TimerEvent: {}
+[47.348497] (-) TimerEvent: {}
+[47.448817] (-) TimerEvent: {}
+[47.549135] (-) TimerEvent: {}
+[47.649487] (-) TimerEvent: {}
+[47.749869] (-) TimerEvent: {}
+[47.850188] (-) TimerEvent: {}
+[47.950487] (-) TimerEvent: {}
+[48.050787] (-) TimerEvent: {}
+[48.151092] (-) TimerEvent: {}
+[48.251416] (-) TimerEvent: {}
+[48.351754] (-) TimerEvent: {}
+[48.452079] (-) TimerEvent: {}
+[48.552413] (-) TimerEvent: {}
+[48.652789] (-) TimerEvent: {}
+[48.753114] (-) TimerEvent: {}
+[48.853429] (-) TimerEvent: {}
+[48.953749] (-) TimerEvent: {}
+[49.054062] (-) TimerEvent: {}
+[49.154398] (-) TimerEvent: {}
+[49.254771] (-) TimerEvent: {}
+[49.355105] (-) TimerEvent: {}
+[49.455458] (-) TimerEvent: {}
+[49.555826] (-) TimerEvent: {}
+[49.656187] (-) TimerEvent: {}
+[49.756516] (-) TimerEvent: {}
+[49.856828] (-) TimerEvent: {}
+[49.957128] (-) TimerEvent: {}
+[50.057473] (-) TimerEvent: {}
+[50.157833] (-) TimerEvent: {}
+[50.258197] (-) TimerEvent: {}
+[50.358513] (-) TimerEvent: {}
+[50.458856] (-) TimerEvent: {}
+[50.559139] (-) TimerEvent: {}
+[50.659489] (-) TimerEvent: {}
+[50.759849] (-) TimerEvent: {}
+[50.860283] (-) TimerEvent: {}
+[50.960639] (-) TimerEvent: {}
+[51.060973] (-) TimerEvent: {}
+[51.161302] (-) TimerEvent: {}
+[51.261638] (-) TimerEvent: {}
+[51.361980] (-) TimerEvent: {}
+[51.462316] (-) TimerEvent: {}
+[51.562655] (-) TimerEvent: {}
+[51.662989] (-) TimerEvent: {}
+[51.763322] (-) TimerEvent: {}
+[51.863669] (-) TimerEvent: {}
+[51.963997] (-) TimerEvent: {}
+[52.064330] (-) TimerEvent: {}
+[52.164676] (-) TimerEvent: {}
+[52.264990] (-) TimerEvent: {}
+[52.365301] (-) TimerEvent: {}
+[52.465618] (-) TimerEvent: {}
+[52.565927] (-) TimerEvent: {}
+[52.666268] (-) TimerEvent: {}
+[52.766591] (-) TimerEvent: {}
+[52.866906] (-) TimerEvent: {}
+[52.967232] (-) TimerEvent: {}
+[53.067511] (-) TimerEvent: {}
+[53.167818] (-) TimerEvent: {}
+[53.268134] (-) TimerEvent: {}
+[53.368455] (-) TimerEvent: {}
+[53.468777] (-) TimerEvent: {}
+[53.569108] (-) TimerEvent: {}
+[53.669422] (-) TimerEvent: {}
+[53.769728] (-) TimerEvent: {}
+[53.870029] (-) TimerEvent: {}
+[53.970351] (-) TimerEvent: {}
+[54.070681] (-) TimerEvent: {}
+[54.171002] (-) TimerEvent: {}
+[54.271321] (-) TimerEvent: {}
+[54.371639] (-) TimerEvent: {}
+[54.471948] (-) TimerEvent: {}
+[54.572280] (-) TimerEvent: {}
+[54.672629] (-) TimerEvent: {}
+[54.772949] (-) TimerEvent: {}
+[54.873265] (-) TimerEvent: {}
+[54.973595] (-) TimerEvent: {}
+[55.073919] (-) TimerEvent: {}
+[55.174236] (-) TimerEvent: {}
+[55.274509] (-) TimerEvent: {}
+[55.374824] (-) TimerEvent: {}
+[55.475129] (-) TimerEvent: {}
+[55.575454] (-) TimerEvent: {}
+[55.675876] (-) TimerEvent: {}
+[55.776521] (-) TimerEvent: {}
+[55.876846] (-) TimerEvent: {}
+[55.977160] (-) TimerEvent: {}
+[56.077491] (-) TimerEvent: {}
+[56.177787] (-) TimerEvent: {}
+[56.278350] (-) TimerEvent: {}
+[56.312090] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable laser_scan_matcher\x1b[0m\n'}
+[56.378475] (-) TimerEvent: {}
+[56.478807] (-) TimerEvent: {}
+[56.579100] (-) TimerEvent: {}
+[56.679406] (-) TimerEvent: {}
+[56.779709] (-) TimerEvent: {}
+[56.880096] (-) TimerEvent: {}
+[56.980412] (-) TimerEvent: {}
+[57.080738] (-) TimerEvent: {}
+[57.181029] (-) TimerEvent: {}
+[57.281332] (-) TimerEvent: {}
+[57.381670] (-) TimerEvent: {}
+[57.383356] (ros2_laser_scan_matcher) StdoutLine: {'line': b'[100%] Built target laser_scan_matcher\n'}
+[57.398643] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[57.441686] (ros2_laser_scan_matcher) JobProgress: {'identifier': 'ros2_laser_scan_matcher', 'progress': 'install'}
+[57.442197] (ros2_laser_scan_matcher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher'], 'cwd': '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('QT_SCALE_FACTOR', '1'), ('LANGUAGE', 'en_US'), ('USER', 'kamau'), ('LC_TIME', 'sw_KE'), ('XDG_SESSION_TYPE', 'x11'), ('COMPIZ_CONFIG_PROFILE', 'mate'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm/lib:/home/kamau/Documents/hiwonder/install/xarm_planner/lib:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo/lib:/home/kamau/Documents/hiwonder/install/xarm_gazebo/lib:/home/kamau/Documents/hiwonder/install/xarm_controller/lib:/home/kamau/Documents/hiwonder/install/xarm_api/lib:/home/kamau/Documents/hiwonder/install/xarm_sdk/lib:/home/kamau/Documents/hiwonder/install/xarm_msgs/lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kamau'), ('OLDPWD', '/home/kamau'), ('DESKTOP_SESSION', 'mate'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GTK_MODULES', 'appmenu-gtk-module:gail:atk-bridge:canberra-gtk-module'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('LC_MONETARY', 'sw_KE'), ('MANAGERPID', '1538'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1561'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3700'), ('UBUNTU_MENUPROXY', '1'), ('QT_QPA_PLATFORMTHEME', 'gtk2'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/kamau/Documents/hiwonder/install:/home/kamau/SLAM_WS/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kamau'), ('JOURNAL_STREAM', '8:13517'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GTK_OVERLAY_SCROLLING', '0'), ('GAZEBO_MODEL_PATH', ':/opt/ros/humble/share/turtlebot3_gazebo/models'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/kamau/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/Kamau-s-HP:@/tmp/.ICE-unix/1562,unix/Kamau-s-HP:/tmp/.ICE-unix/1562'), ('GDM_LANG', 'en_US'), ('INVOCATION_ID', 'c9f38f768b444739ba09706c6b3d192f'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('LC_ADDRESS', 'sw_KE'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'MATE'), ('LC_TELEPHONE', 'sw_KE'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XDG_SESSION_DESKTOP', 'mate'), ('XAUTHORITY', '/home/kamau/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/kamau'), ('AMENT_PREFIX_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sw_KE'), ('TERMINATOR_UUID', 'urn:uuid:6e5e1693-3a0d-43a3-9f14-d687d5086434'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'mate'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sw_KE'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sw_KE'), ('PWD', '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-mate:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=06806ddfa111238bdb439ea166fba71c'), ('XDG_DATA_DIRS', '/usr/share/mate:/home/kamau/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/kamau/SLAM_WS/install/my_py_pkg/lib/python3.10/site-packages:/home/kamau/SLAM_WS/install/controller/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/xarm_msgs/local/lib/python3.10/dist-packages:/home/kamau/Documents/hiwonder/install/uf_ros_lib/lib/python3.10/site-packages:/home/kamau/Documents/hiwonder/install/hiwonder_teleop/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'sw_KE'), ('MATE_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('LC_PAPER', 'sw_KE'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble'), ('QT_FONT_DPI', '96')]), 'shell': False}
+[57.457272] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[57.457556] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher\n'}
+[57.461990] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Set runtime path of "/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib/ros2_laser_scan_matcher/laser_scan_matcher" to ""\n'}
+[57.462289] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ament_index/resource_index/package_run_dependencies/ros2_laser_scan_matcher\n'}
+[57.462538] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ament_index/resource_index/parent_prefix_path/ros2_laser_scan_matcher\n'}
+[57.462856] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.sh\n'}
+[57.463085] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/ament_prefix_path.dsv\n'}
+[57.463334] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.sh\n'}
+[57.463572] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/environment/path.dsv\n'}
+[57.463821] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.bash\n'}
+[57.464078] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.sh\n'}
+[57.464313] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.zsh\n'}
+[57.464551] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/local_setup.dsv\n'}
+[57.464794] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv\n'}
+[57.465113] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ament_index/resource_index/packages/ros2_laser_scan_matcher\n'}
+[57.465395] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig.cmake\n'}
+[57.465648] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/cmake/ros2_laser_scan_matcherConfig-version.cmake\n'}
+[57.465874] (ros2_laser_scan_matcher) StdoutLine: {'line': b'-- Installing: /home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.xml\n'}
+[57.468162] (ros2_laser_scan_matcher) CommandEnded: {'returncode': 0}
+[57.481778] (-) TimerEvent: {}
+[57.526907] (ros2_laser_scan_matcher) JobEnded: {'identifier': 'ros2_laser_scan_matcher', 'rc': 0}
+[57.527780] (-) EventReactorShutdown: {}

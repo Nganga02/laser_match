@@ -1,0 +1,204 @@
+[0.125s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7549a5d37490>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7549a5d36f20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7549a5d36f20>>, mixin_verb=('build',))
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.315s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.315s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/kamau/Documents/ros2_laser_odom'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.331s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['ignore', 'ignore_ament_install']
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'ignore'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'ignore_ament_install'
+[0.332s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extensions ['ros']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(csm) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'csm' with type 'ros.ament_cmake' and name 'csm'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_laser_scan_matcher) by extension 'ros'
+[0.341s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_laser_scan_matcher' with type 'ros.ament_cmake' and name 'ros2_laser_scan_matcher'
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.392s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.393s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.397s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 12 installed packages in /home/kamau/Documents/hiwonder/install
+[0.398s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/kamau/SLAM_WS/install
+[0.402s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 427 installed packages in /opt/ros/humble
+[0.406s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.506s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_cache' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_clean_first' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'cmake_force_configure' from command line to 'False'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'ament_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_cmake_args' from command line to 'None'
+[0.507s] Level 5:colcon.colcon_core.verb:set package 'csm' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.507s] DEBUG:colcon.colcon_core.verb:Building package 'csm' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kamau/Documents/ros2_laser_odom/build/csm', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kamau/Documents/ros2_laser_odom/install/csm', 'merge_install': False, 'path': '/home/kamau/Documents/ros2_laser_odom/csm', 'symlink_install': False, 'test_result_base': None}
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_clean_first' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'cmake_force_configure' from command line to 'False'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'ament_cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.508s] Level 5:colcon.colcon_core.verb:set package 'ros2_laser_scan_matcher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.508s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_laser_scan_matcher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher', 'merge_install': False, 'path': '/home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher', 'symlink_install': False, 'test_result_base': None}
+[0.508s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.510s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.510s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kamau/Documents/ros2_laser_odom/csm' with build type 'ament_cmake'
+[0.510s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kamau/Documents/ros2_laser_odom/csm'
+[0.514s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.514s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.514s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.533s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake /home/kamau/Documents/ros2_laser_odom/csm -DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/csm
+[2.226s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake /home/kamau/Documents/ros2_laser_odom/csm -DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/csm
+[2.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --build /home/kamau/Documents/ros2_laser_odom/build/csm -- -j4 -l4
+[39.029s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --build /home/kamau/Documents/ros2_laser_odom/build/csm -- -j4 -l4
+[39.176s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --install /home/kamau/Documents/ros2_laser_odom/build/csm
+[39.201s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[39.201s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --install /home/kamau/Documents/ros2_laser_odom/build/csm
+[39.204s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm' for CMake module files
+[39.205s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm' for CMake config files
+[39.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[39.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[39.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[39.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[39.208s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/lib'
+[39.208s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[39.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[39.209s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[39.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[39.210s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/bin'
+[39.210s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/lib/pkgconfig/csm.pc'
+[39.210s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/lib/python3.10/site-packages'
+[39.211s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/bin'
+[39.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.ps1'
+[39.213s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.dsv'
+[39.214s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.sh'
+[39.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.bash'
+[39.217s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.zsh'
+[39.218s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kamau/Documents/ros2_laser_odom/install/csm/share/colcon-core/packages/csm)
+[39.348s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(csm)
+[39.348s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm' for CMake module files
+[39.349s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm' for CMake config files
+[39.350s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'cmake_prefix_path')
+[39.350s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/cmake_prefix_path.ps1'
+[39.351s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/cmake_prefix_path.dsv'
+[39.351s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/cmake_prefix_path.sh'
+[39.352s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/lib'
+[39.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('csm', 'ld_library_path_lib')
+[39.353s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/ld_library_path_lib.ps1'
+[39.353s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/ld_library_path_lib.dsv'
+[39.354s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/hook/ld_library_path_lib.sh'
+[39.355s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/bin'
+[39.355s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/lib/pkgconfig/csm.pc'
+[39.355s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/lib/python3.10/site-packages'
+[39.356s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/csm/bin'
+[39.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.ps1'
+[39.357s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.dsv'
+[39.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.sh'
+[39.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.bash'
+[39.359s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.zsh'
+[39.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kamau/Documents/ros2_laser_odom/install/csm/share/colcon-core/packages/csm)
+[39.361s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher' with build type 'ament_cmake'
+[39.361s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher'
+[39.361s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[39.362s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[39.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher
+[40.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake /home/kamau/Documents/ros2_laser_odom/ros2_laser_scan_matcher -DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher
+[40.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher -- -j4 -l4
+[57.909s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher -- -j4 -l4
+[57.953s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher': AMENT_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher
+[57.978s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[57.978s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher' for CMake module files
+[57.979s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher' returned '0': AMENT_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm:/home/kamau/SLAM_WS/install/slambot_description:/home/kamau/SLAM_WS/install/cpp_pkg:/home/kamau/Documents/hiwonder/install/xarm_planner:/home/kamau/Documents/hiwonder/install/xarm_moveit_servo:/home/kamau/Documents/hiwonder/install/xarm_moveit_config:/home/kamau/Documents/hiwonder/install/xarm_gazebo:/home/kamau/Documents/hiwonder/install/xarm_controller:/home/kamau/Documents/hiwonder/install/xarm_api:/home/kamau/Documents/hiwonder/install/xarm_sdk:/home/kamau/Documents/hiwonder/install/xarm_msgs:/home/kamau/Documents/hiwonder/install/xarm_description:/home/kamau/Documents/hiwonder/install/realsense_gazebo_plugin:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble LD_LIBRARY_PATH=/home/kamau/Documents/ros2_laser_odom/install/csm/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/kamau/Documents/ros2_laser_odom/build/ros2_laser_scan_matcher
+[57.980s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher' for CMake config files
+[57.980s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[57.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[57.981s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[57.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[57.982s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib'
+[57.982s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/bin'
+[57.982s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[57.982s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[57.982s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/bin'
+[57.983s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[57.983s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[57.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[57.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[57.984s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[57.985s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[58.028s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_laser_scan_matcher)
+[58.029s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher' for CMake module files
+[58.029s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher' for CMake config files
+[58.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_laser_scan_matcher', 'cmake_prefix_path')
+[58.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.ps1'
+[58.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.dsv'
+[58.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/hook/cmake_prefix_path.sh'
+[58.032s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib'
+[58.032s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/bin'
+[58.032s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib/pkgconfig/ros2_laser_scan_matcher.pc'
+[58.033s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/lib/python3.10/site-packages'
+[58.033s] Level 1:colcon.colcon_core.environment:checking '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/bin'
+[58.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.ps1'
+[58.034s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.dsv'
+[58.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.sh'
+[58.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.bash'
+[58.036s] INFO:colcon.colcon_core.shell:Creating package script '/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/ros2_laser_scan_matcher/package.zsh'
+[58.036s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/kamau/Documents/ros2_laser_odom/install/ros2_laser_scan_matcher/share/colcon-core/packages/ros2_laser_scan_matcher)
+[58.037s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[58.037s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[58.037s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[58.037s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[58.046s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[58.046s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[58.046s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[58.225s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[58.225s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kamau/Documents/ros2_laser_odom/install/local_setup.ps1'
+[58.229s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kamau/Documents/ros2_laser_odom/install/_local_setup_util_ps1.py'
+[58.231s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kamau/Documents/ros2_laser_odom/install/setup.ps1'
+[58.234s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kamau/Documents/ros2_laser_odom/install/local_setup.sh'
+[58.235s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/kamau/Documents/ros2_laser_odom/install/_local_setup_util_sh.py'
+[58.236s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kamau/Documents/ros2_laser_odom/install/setup.sh'
+[58.238s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kamau/Documents/ros2_laser_odom/install/local_setup.bash'
+[58.239s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kamau/Documents/ros2_laser_odom/install/setup.bash'
+[58.241s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/kamau/Documents/ros2_laser_odom/install/local_setup.zsh'
+[58.242s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/kamau/Documents/ros2_laser_odom/install/setup.zsh'

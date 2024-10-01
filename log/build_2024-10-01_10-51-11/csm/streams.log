@@ -1,0 +1,97 @@
+[0.022s] Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake /home/kamau/Documents/ros2_laser_odom/csm -DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/csm
+[0.118s] -- The C compiler identification is GNU 11.4.0
+[0.188s] -- The CXX compiler identification is GNU 11.4.0
+[0.196s] -- Detecting C compiler ABI info
+[0.279s] -- Detecting C compiler ABI info - done
+[0.288s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.288s] -- Detecting C compile features
+[0.289s] -- Detecting C compile features - done
+[0.292s] -- Detecting CXX compiler ABI info
+[0.398s] -- Detecting CXX compiler ABI info - done
+[0.407s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.407s] -- Detecting CXX compile features
+[0.408s] -- Detecting CXX compile features - done
+[0.413s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.623s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.855s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.969s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.987s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.012s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.041s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.067s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.171s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.179s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.236s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.261s] -- Looking for pthread.h
+[1.379s] -- Looking for pthread.h - found
+[1.379s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.482s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.484s] -- Found Threads: TRUE  
+[1.683s] -- Configuring done
+[1.694s] -- Generating done
+[1.697s] -- Build files have been written to: /home/kamau/Documents/ros2_laser_odom/build/csm
+[1.715s] Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake /home/kamau/Documents/ros2_laser_odom/csm -DCMAKE_INSTALL_PREFIX=/home/kamau/Documents/ros2_laser_odom/install/csm
+[1.716s] Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --build /home/kamau/Documents/ros2_laser_odom/build/csm -- -j4 -l4
+[1.813s] [  4%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/laser_data.cpp.o[0m
+[1.817s] [  8%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils.cpp.o[0m
+[1.826s] [ 12%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/math_utils_gsl.cpp.o[0m
+[1.844s] [ 16%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/utils.cpp.o[0m
+[6.299s] [ 20%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/logging.cpp.o[0m
+[6.331s] [ 25%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/sm_options.cpp.o[0m
+[6.498s] [ 29%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/orientation.cpp.o[0m
+[6.617s] [ 33%] [32mBuilding CXX object CMakeFiles/csm.dir/src/csm/clustering.cpp.o[0m
+[10.419s] [ 37%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl.cpp.o[0m
+[10.501s] [ 41%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_conversions.cpp.o[0m
+[10.654s] [ 45%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_misc.cpp.o[0m
+[10.771s] [ 50%] [32mBuilding CXX object CMakeFiles/csm.dir/src/egsl/egsl_ops.cpp.o[0m
+[13.714s] [ 54%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc.cpp.o[0m
+[14.693s] [ 58%] [32mBuilding CXX object CMakeFiles/csm.dir/src/gpc/gpc_utils.cpp.o[0m
+[14.878s] [ 62%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp.cpp.o[0m
+[17.883s] [ 66%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_dumb.cpp.o[0m
+[18.702s] [ 70%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_corr_tricks.cpp.o[0m
+[21.129s] [ 75%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_covariance.cpp.o[0m
+[21.757s] [ 79%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_debug.cpp.o[0m
+[21.820s] [ 83%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_loop.cpp.o[0m
+[24.411s] [ 87%] [32mBuilding CXX object CMakeFiles/csm.dir/src/icp/icp_outliers.cpp.o[0m
+[24.984s] [ 91%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options.cpp.o[0m
+[25.031s] [ 95%] [32mBuilding CXX object CMakeFiles/csm.dir/src/options/options_interface.cpp.o[0m
+[37.826s] [100%] [32m[1mLinking CXX shared library libcsm.so[0m
+[38.503s] [100%] Built target csm
+[38.518s] Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --build /home/kamau/Documents/ros2_laser_odom/build/csm -- -j4 -l4
+[38.664s] Invoking command in '/home/kamau/Documents/ros2_laser_odom/build/csm': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --install /home/kamau/Documents/ros2_laser_odom/build/csm
+[38.674s] -- Install configuration: ""
+[38.674s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/lib/libcsm.so
+[38.681s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include
+[38.682s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm
+[38.682s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/restrict.h
+[38.682s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/csm.h
+[38.682s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/algos.h
+[38.682s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/laser_data.h
+[38.683s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/csm/laser_data_inline.h
+[38.683s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/gsl_eigen
+[38.683s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/..//include/gsl_eigen/gsl_eigen.h
+[38.683s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/resource
+[38.683s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/resource/csm
+[38.684s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/../gsl_eigen
+[38.684s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/include/../gsl_eigen/gsl_eigen.h
+[38.684s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/library_path.sh
+[38.684s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/library_path.dsv
+[38.684s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/ament_index/resource_index/package_run_dependencies/csm
+[38.685s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/ament_index/resource_index/parent_prefix_path/csm
+[38.685s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/ament_prefix_path.sh
+[38.685s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/ament_prefix_path.dsv
+[38.685s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/path.sh
+[38.685s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/environment/path.dsv
+[38.686s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.bash
+[38.686s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.sh
+[38.686s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.zsh
+[38.686s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/local_setup.dsv
+[38.686s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.dsv
+[38.687s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/ament_index/resource_index/packages/csm
+[38.687s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/ament_cmake_export_dependencies-extras.cmake
+[38.687s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/ament_cmake_export_include_directories-extras.cmake
+[38.687s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/ament_cmake_export_libraries-extras.cmake
+[38.687s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/csmConfig.cmake
+[38.687s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/cmake/csmConfig-version.cmake
+[38.688s] -- Installing: /home/kamau/Documents/ros2_laser_odom/install/csm/share/csm/package.xml
+[38.690s] Invoked command in '/home/kamau/Documents/ros2_laser_odom/build/csm' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kamau/SLAM_WS/install/my_py_pkg:/home/kamau/SLAM_WS/install/controller:/home/kamau/Documents/hiwonder/install/uf_ros_lib:/home/kamau/Documents/hiwonder/install/hiwonder_teleop:/opt/ros/humble /usr/bin/cmake --install /home/kamau/Documents/ros2_laser_odom/build/csm
